@@ -1,0 +1,26 @@
+body {
+  background-color: #222;
+  color: #eee;
+  font-family: sans-serif;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+}
+
+nav a {
+  color: #eee;
+  text-decoration: none;
+  padding: 1em;
+}
+
+nav a.active {
+  background-color: #007bff;
+}
+
+main {
+  padding: 1em;
+}

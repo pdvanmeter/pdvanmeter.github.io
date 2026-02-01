@@ -1,0 +1,22 @@
+title: P. D. Van Meter
+description: >-
+  Data Scientist | Plasma Physicist
+baseurl: ""
+url: "https://pdvanmeter.github.io"
+
+# Build settings
+plugins:
+  - jekyll-feed
+
+# Exclude from processing.
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
