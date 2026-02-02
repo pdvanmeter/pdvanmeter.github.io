@@ -3,4 +3,4 @@ layout: default
 ---
 # Patrick D. VanMeter, PhD
 
-This is the personal website of a data scientist and former plasma physicist.
+Welcome to my personal website! This space is still under construction, but feel free to look around.

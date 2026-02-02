@@ -7,6 +7,10 @@
   <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
+  <header>
+    <h1><a href="/">{{ site.title }}</a></h1>
+    <p>{{ site.description }}</p>
+  </header>
   <nav>
     {% for item in site.data.navigation %}
       <a href="{{ item.link }}" {% if page.url == item.link %}class="active"{% endif %}>{{ item.name }}</a>
@@ -15,5 +19,8 @@
   <main>
     {{ content }}
   </main>
+  <footer>
+    <p>&copy; {{ "now" | date: "%Y" }} {{ site.title }}</p>
+  </footer>
 </body>
 </html>
