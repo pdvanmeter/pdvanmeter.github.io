@@ -1,7 +1,7 @@
 ---
 layout: default
+title: Experiences
 ---
-# Resume
 
-<iframe src="/assets/documents/Patrick%20VanMeter%20-%20Data%20Science%20Professional%20CV%20-%20Q1%202025.pdf" width="100%" height="800px" style="border:none;">
-</iframe>
+<meta http-equiv="refresh" content="0; url={{ '/experiences.html' | relative_url }}">
+<p>Redirecting to <a href="{{ '/experiences.html' | relative_url }}">Experiences</a>&hellip;</p>

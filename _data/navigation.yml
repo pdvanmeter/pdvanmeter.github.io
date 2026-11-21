@@ -1,7 +1,7 @@
 - name: Home
   link: /
-- name: Resume
-  link: /resume.html
+- name: Experiences
+  link: /experiences.html
 - name: Publications
   link: /publications.html
 - name: Thesis

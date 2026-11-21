@@ -1,39 +1,158 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Welcome!</title>
+  <title>Welcome! | Patrick VanMeter</title>
+  <meta name="description" content="Welcome to my new website! This site is currently under construction, but feel free to have a look around.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/style.css">
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem('theme') || 'dark';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+    })();
+  </script>
 </head>
 <body>
-  <header>
-    <h1><a href="/">Patrick VanMeter</a></h1>
-    <p>Data Scientist | Physicist</p>
+  <header class="site-header">
+    <div class="header-inner container">
+      <div class="brand">
+        <a href="/" class="brand-link">
+          <span class="brand-mark">PV</span>
+          <div class="brand-text">
+            <span class="brand-title">Patrick VanMeter</span>
+            <span class="brand-subtitle">Data Scientist | Physicist</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="nav-wrapper">
+        <nav class="site-nav" aria-label="Main navigation">
+          
+            
+            
+            <a href="/"
+               class="nav-link ">
+              Home
+            </a>
+          
+            
+            
+            <a href="/experiences.html"
+               class="nav-link ">
+              Experiences
+            </a>
+          
+            
+            
+            <a href="/publications.html"
+               class="nav-link ">
+              Publications
+            </a>
+          
+            
+            
+            <a href="/thesis.html"
+               class="nav-link ">
+              Thesis
+            </a>
+          
+            
+            
+            <a href="/blog.html"
+               class="nav-link ">
+              Blog
+            </a>
+          
+        </nav>
+
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle color theme" title="Toggle light/dark mode">
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
   </header>
-  <nav>
-    
-      <a href="/" >Home</a>
-    
-      <a href="/resume.html" >Resume</a>
-    
-      <a href="/publications.html" >Publications</a>
-    
-      <a href="/thesis.html" >Thesis</a>
-    
-      <a href="/blog.html" >Blog</a>
-    
-  </nav>
-  <main>
+
+  <main class="site-main container">
+    <div class="content-surface">
+      <article class="post">
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="2026-02-01T11:00:00-06:00">February 1, 2026</time>
+      
+        <span class="meta-sep">&middot;</span>
+        <span class="post-categories">
+          
+            <span class="tag">jekyll</span>
+          
+            <span class="tag">update</span>
+          
+        </span>
+      
+    </div>
+    <h1 class="post-title">Welcome!</h1>
+  </header>
+
+  <div class="post-content">
     <p>Welcome to my new website! This site is currently under construction, but feel free to have a look around.</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Testing code snippet
 </span><span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
 </code></pre></div></div>
 
-  </main>
-  <footer>
-    <p>&copy; 2026 Patrick VanMeter</p>
+  </div>
+
+  <footer class="post-footer">
+    <a href="/blog.html" class="back-link">&larr; Back to all posts</a>
   </footer>
+</article>
+
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner container">
+      <div class="footer-info">
+        <span class="footer-name">Patrick VanMeter, PhD</span>
+        <span class="footer-sep">&middot;</span>
+        <span class="footer-role">Data Scientist | Physicist</span>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/pdvanmeter" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
+        <span class="footer-sep">&middot;</span>
+        <span class="footer-copy">&copy; 2026 Patrick VanMeter</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function() {
+      const toggleBtn = document.getElementById('theme-toggle');
+      if (!toggleBtn) return;
+      toggleBtn.addEventListener('click', function() {
+        const current = document.documentElement.getAttribute('data-theme') || 'dark';
+        const next = current === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        localStorage.setItem('theme', next);
+      });
+    })();
+  </script>
 </body>
 </html>
